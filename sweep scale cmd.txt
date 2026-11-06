@@ -1,0 +1,8 @@
+python sweep_scale.py                   # prints the plan and starts nothing
+python sweep_scale.py --pilot           # times two short 5000-node runs and projects the total
+python sweep_scale.py --run --workers 1 # runs the sweep; resumable, so you can stop and restart
+python sweep_scale.py --plots           # redraws plots from whatever has finished
+
+
+
+It may not run at all. I don’t know how the simulator’s network setup scales with 5000 nodes, since parts of it may grow quadratically. If the pilot fails or is hopeless, shrink the job with flags: --nodes 2000 --n 10,30,50 --skews 0,1,2 --sim-time 500.

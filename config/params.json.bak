@@ -1,0 +1,78 @@
+{
+    "num_nodes": 100,
+    "simulation_time": 1000,
+    "num_epochs": 1,
+    "num_slots": 10,
+    "num_shards": 10,
+    "principal_committee_size": 0.35,
+    "block_mu": 560,
+    "block_sigma": 30,
+    "transaction_mu": 26.66,
+    "transaction_sigma": 0.0,
+    "tx_value_low": 1,
+    "tx_value_high": 100,
+    "reward_percentage": 0.1,
+    "tx_block_capacity": 10,
+    "tx_blocks_in_mini_block": 1,
+    "cross_shard_tx_percentage": 0.9,
+    "cutoff_vote_percentage": 0.5,
+    "sharon_enabled": true,
+    "dynamic_matching": true,
+    "traffic_skew": 2.0,
+    "aging_alpha": 0.1,
+    "merge_capacity": 10,
+    "weighted_scheduling": false,
+    "log_file": "simulation_results.log",
+    "verbose": 0,
+    "locations": [
+        "Ireland",
+        "Tokyo",
+        "Ohio"
+    ],
+    "delay": {
+        "Ireland": {
+            "Ireland": {
+                "mu": 0.0010420075,
+                "sigma": 0.00020659828761088512
+            },
+            "Tokyo": {
+                "mu": 0.2220275,
+                "sigma": 0.00025834811785650774
+            },
+            "Ohio": {
+                "mu": 0.0846995,
+                "sigma": 0.00019583092197097128
+            }
+        },
+        "Tokyo": {
+            "Ireland": {
+                "mu": 0.2220275,
+                "sigma": 0.00025834811785650774
+            },
+            "Tokyo": {
+                "mu": 0.0005412275,
+                "sigma": 0.00011590502898386248
+            },
+            "Ohio": {
+                "mu": 0.1560425,
+                "sigma": 0.0006088462449584459
+            }
+        },
+        "Ohio": {
+            "Ireland": {
+                "mu": 0.0846995,
+                "sigma": 0.00019583092197097128
+            },
+            "Tokyo": {
+                "mu": 0.1560425,
+                "sigma": 0.0006088462449584459
+            },
+            "Ohio": {
+                "mu": 0.000566525,
+                "sigma": 0.000265358784243145
+            }
+        }
+    },
+    "seed": 3,
+    "elastic_capacity_enabled": true
+}
